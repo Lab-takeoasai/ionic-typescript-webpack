@@ -8,4 +8,4 @@
     "ionic": "registry:dt/ionic#0.0.0+20160423125358",
     "jquery": "registry:dt/jquery#1.10.0+20160417213236"
   }
-}
+} // 多分typingsの最小構成

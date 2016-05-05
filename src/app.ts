@@ -47,7 +47,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         views: {
           'tab-dash': {
             templateUrl: 'templates/tab-dash.html',
-            controller: XXX,
+            controller: XXX, // 外部ファイルをインポートしたやつ
             controllerAs: "vm"
           }
         }
@@ -67,7 +67,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         views: {
           'tab-chats': {
             templateUrl: 'templates/chat-detail.html',
-            controller: TestController
+            controller: 'ChatDetailCtrl'
           }
         }
       })
@@ -87,15 +87,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
   });
 
-/**
- * TestController
- */
-class TestController {
-  constructor() {
-    console.log("aaaaaaaaaaa");
-  }
-}
-
-
+// importだけしてやると, webpackで勝手に読み込んでくれて嬉しい
 import "./controllers";
 import "./services";

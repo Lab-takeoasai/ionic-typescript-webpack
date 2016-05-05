@@ -10,6 +10,7 @@ gulp.task('watch', function () {
   gulp.watch(paths.typescript, ['webpack']);
 });
 
+// webpackの最小構成
 var webpack = require('gulp-webpack');;
 var webpackConfig = require('./webpack.config.js');
 gulp.task('webpack', function () {
